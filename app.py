@@ -47,7 +47,7 @@ if uploaded_file is not None and not st.session_state.review_generated:
                     time.sleep(2)
                     manuscript = genai.get_file(manuscript.name)
 
-            model = genai.GenerativeModel(model_name="gemini-1.5-flash")
+            model = genai.GenerativeModel(model_name="gemini-2.5-flash")
             
             st.session_state.chat_session = model.start_chat(
                 history=[
