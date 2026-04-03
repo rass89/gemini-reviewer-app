@@ -24,3 +24,18 @@ This application is an AI co-pilot designed specifically for academic researcher
    ```bash
    git clone https://github.com/rass89/gemini-reviewer-app.git
    cd gemini-reviewer-app
+
+2. Create a virtual environment & install dependencies:
+
+   ```bash
+   python3 -m venv my_env
+   source my_env/bin/activate
+   pip install streamlit google-generativeai
+   Add your API Key:
+   Create a .env file or add your key directly to the script to authenticate with Google AI Studio.
+
+3. Launch the app:
+
+   ```bash
+   streamlit run app.py
+   
